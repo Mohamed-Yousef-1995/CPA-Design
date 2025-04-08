@@ -1,0 +1,475 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+        
+        <!-- title of site -->
+        <title>CPA Portal Design Final</title>
+
+        <!-- For favicon png -->
+		<!-- <link rel="shortcut icon" type="image/icon" href="../assets/logo/favicon.png"/> -->
+       
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+
+        <!--linear icon css-->
+		<link rel="stylesheet" href="../assets/css/linearicons.css">
+
+		<!--animate.css-->
+        <link rel="stylesheet" href="../assets/css/animate.css">
+
+		<!--flaticon.css-->
+        <link rel="stylesheet" href="../assets/css/flaticon.css">
+
+		<!--slick.css-->
+        <link rel="stylesheet" href="../assets/css/slick.css">
+		<link rel="stylesheet" href="../assets/css/slick-theme.css">
+		
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+		
+		<!-- bootsnav -->
+		<!-- <link rel="stylesheet" href="../assets/css/bootsnav.css" >	 -->
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="../assets/css/style.css">
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href="../assets/css/responsive.css">
+		<style>
+			.login-container {
+            background: #fff;
+            border-radius: 22px;
+            width: 50%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+			opacity: 0.8;
+        }
+     	.register-container {
+            background: #fff;
+            border-radius: 22px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+           display:none;
+        }
+ 
+        .login-header img {
+            display: block;
+            margin: 0 auto 15px;
+            width: 130px;
+        }
+
+ 
+        .login-header p {
+			color: #555;
+			margin: 0px 0 20px 0;
+        }
+ 
+        .form-group {
+            margin-bottom: 15px;
+        }
+ 
+        .form-group label {
+			font-size: 14px;
+			color: #143044;
+			display: block;
+			font-weight: 500;
+			margin-bottom: 5px;
+		}
+ 
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+ 
+        .form-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+			margin: 20px 0;
+        }
+ 
+        .form-actions a {
+            color: #0a97b0;
+            text-decoration: none;
+        }
+ 
+		.btn-submit {
+		width: 60%;
+		background-color: #5371f9;
+		color: #fff;
+		border: none;
+		border-radius: 8px;
+		cursor: pointer;
+		transition: background-color 0.3s;
+		display: block; /* Ensures the button takes the full width specified */
+		margin: 0 auto; /* Centers the button horizontally */
+			font-size: 14px;
+					padding: 8px;
+		}
+ 
+        .btn-submit:hover {
+            background-color: #0a97b0;
+        }
+ 
+        .login-footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+ 
+        .login-footer a {
+            color: #0a97b0;
+            text-decoration: none;
+        }
+ 
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .login-container {
+                padding: 20px;
+            }
+ 
+            .login-header img {
+                width: 60px;
+            }
+ 
+            .login-header h2 {
+                font-size: 18px;
+            }
+ 
+ 
+        }
+		.welcome-hero{
+			height: 850px;
+		}
+		.welcome-hero-txt{
+			padding-top: 60px;
+		}
+		.welcome-hero-txt p{
+			font-size: 14px;
+		}
+		.welcome-hero-btn{
+			width: 100%;
+			margin-left: 0px;
+		}
+		.login-header{
+			text-align: left;
+		}
+		.login-header h2{
+			text-align: left;
+		}
+		.welcome-hero-txt p{color: #04233b;}
+		</style>
+    </head>
+	
+	<body>
+
+		<!--header-top start -->
+		<header id="header-top" class="header-top">
+			<ul>
+				<li>
+					<div class="header-top-left">
+						<ul>
+							<li class="select-opt">
+								<select name="language" id="language">
+									<option value="default">EN</option>
+									<option value="Bangla">BN</option>
+									<option value="Arabic">AB</option>
+								</select>
+							</li>
+							<!-- <li class="select-opt">
+								<select name="currency" id="currency">
+									<option value="usd">USD</option>
+									<option value="euro">Euro</option>
+									<option value="bdt">BDT</option>
+								</select>
+							</li> -->
+							<li class="select-opt">
+								<a href="#" style="color: white;"><i class="fa fa-wheelchair-alt" aria-hidden="true"></i></a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<!-- <li>
+					<div class="header-top-left">
+						<ul>
+							<div class="navbar-header">
+								<a class="navbar-brand" href="hompageD3.html"> CPA <span> Oman</span></a>
+
+							</div>
+						</ul>
+					</div>
+				</li> -->
+				<li class="head-responsive-right pull-right" style="margin-top: 4px;">
+					<div class="header-top-right">
+						<ul>
+							<li class="header-top-contact">
+								<span>80079009 </span><span> 80077997</span>
+							</li>
+							<li class="header-top-contact">
+								<a href="#">sign in</a>
+							</li>
+							<li class="header-top-contact">
+								<a href="#">register</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+					
+		</header><!--/.header-top-->
+		<!--header-top end -->
+
+		<!-- top-area Start -->
+		<section class="top-area">
+			<div class="header-area">
+				<!-- Start Navigation -->
+			    <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+					
+			        <div class="">
+						
+			            <!-- Start Header Navigation -->
+			            <div class="navbar-header">
+							
+			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+			                    <i class="fa fa-bars"></i>
+			                </button>
+							
+			                <a class="" href="../hompageD3.html"> <img src="../assets/logo/logo-org.png" width="100px"/></a>
+							
+
+			            </div><!--/.navbar-header-->
+			            <!-- End Header Navigation -->
+
+			            <!-- Collect the nav links, forms, and other content for toggling -->
+			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+			                    <li class=""><a href="/hompageD3.html">home</a></li>
+			                    <li class=""><a href="/hompageD3.html">Our Services</a></li>
+			                    <li class=""><a href="#explore">Complain & Track</a></li>
+			                    <li class=""><a href="#reviews">Alerts and Updates</a></li>
+			                    <li class=""><a href="#blog">blog</a></li>
+								<li class=""><a href="../assets/table.html">list</a></li>
+								<li class=""><a href="../assets/form.html">form</a></li>
+			                    <!-- <li class="scroll"><a href="#contact">contact</a></li> -->
+			                </ul><!--/.nav -->
+			            </div><!-- /.navbar-collapse -->
+			        </div><!--/.container-->
+			    </nav><!--/nav-->
+			    <!-- End Navigation -->
+			</div><!--/.header-area-->
+		    <div class="clearfix"></div>
+
+		</section><!-- /.top-area-->
+		<!-- top-area End -->
+
+		<!--welcome-hero start -->
+		<section id="home" class="welcome-hero">
+			<div class="container">
+				<div class="welcome-hero-txt">
+					<img src="../assets/logo/logo-wh.png" width="200px" style="margin-left: -30px;"/>
+					<div class="login-header">
+						<h2>Login</h2>
+						<p style="color:white">Please enter your email and password to continue</p>
+						</div>
+					<!-- Login start -->
+		<div class="login-container">
+			
+			<form>
+			<div class="form-group">
+			<label  for="fake-username">User ID / Civil No#</label>
+			<input type="text" id="fake-username" name="email" placeholder="Enter your Civil No">
+			</div>
+			<div class="form-group">
+			<label for="fake-password">Password</label>
+			<input type="password" id="fake-password" name="fake-password" placeholder="Enter your password">
+			</div>
+			<div class="form-actions">
+			<div>
+			<input type="checkbox" id="remember">
+			<label for="remember">Remember Password</label>
+			</div>
+			</div>
+			<button type="button" id="fake-login"class="welcome-hero-btn">Sign In</button>
+			<div class="login-footer">
+			<p>Don’t have an account? <a href="/jw/web/userview/Omancpa/complaintModule/_/registerResidentCustomer?embed=true"  id='show-register'>Create Account</a></p>
+			<!-- <p>#i18n.Do you want to File a Complaint?# <a href="#appVariable.baseURL#jw/web/userview/Omancpa/complaintModule/_/complain_register"  id=''>#i18n.Click Here#</a></p> -->
+			<p><a href="#">Support</a> | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+			</div>
+			</form>
+		</div>
+			
+		<!-- login end -->
+				</div>
+			</div>
+
+		</section><!--/.welcome-hero-->
+		<!--welcome-hero end -->
+
+		
+		<!--footer start-->
+		<footer id="footer"  class="footer">
+			<section class="info_section layout_padding2">
+				<div class="container">
+					<div class="row">
+					<div class="col-md-6 col-lg-3 info_col">
+						<div class="info_contact">
+						<h4>
+							Address
+						</h4>
+						<div class="contact_link_box">
+							<a href="">
+							<i class="fa fa-map-marker" aria-hidden="true"></i>
+							<span>
+								Oman
+							</span>
+							</a>
+							<a href="">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+							<span>
+								80077997 , 80079009
+							</span>
+							</a>
+							<a href="">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+							<span>
+								cc@pacp.gov.om
+							</span>
+							</a>
+						</div>
+						</div>
+						<!-- <div class="info_social">
+						<a href="">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</a>
+						<a href="">
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+						</a>
+						<a href="">
+							<i class="fa fa-linkedin" aria-hidden="true"></i>
+						</a>
+						<a href="">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
+						</a>
+						</div> -->
+					</div>
+					<div class="col-md-6 col-lg-3 info_col">
+						<div class="info_detail">
+						<h4>
+							Info
+						</h4>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-2 mx-auto info_col">
+						<div class="info_link_box">
+						<h4>
+							Links
+						</h4>
+						<div class="info_links">
+							<a class="active" href="#">
+							<img src="../assets/images/nav-bullet.png" alt="">
+							FAQ
+							</a>
+							<a class="" href="#">
+							<img src="../assets/images/nav-bullet.png" alt="">
+							Contact Us
+							</a>
+							<a class="" href="#">
+							<img src="../assets/images/nav-bullet.png" alt="">
+							How to sign in
+							</a>
+							<a class="" href="#">
+							<img src="../assets/images/nav-bullet.png" alt="">
+							CPA Employees
+							</a>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 info_col ">
+						<h4>
+						Subscribe
+						</h4>
+						<form action="#">
+						<input type="text" placeholder="Enter email">
+						<button type="submit">
+							Subscribe
+						</button>
+						</form>
+					</div>
+					</div>
+				</div>
+			</section>
+			<div class="container">
+				<div class="hm-footer-copyright">
+					<div class="row">
+						<div class="col-sm-5">
+							<p>
+								&copy;copyright by <a href="#">GCG Enterprice Solutions </a> 2025
+							</p><!--/p-->
+						</div>
+						<div class="col-sm-7">
+							<div class="footer-social">
+								<!-- <span><i class="fa fa-phone"> 80079009 OR 80077997</i></span> -->
+								<a href="#"><i class="fa fa-facebook"></i></a>	
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-linkedin"></i></a>
+								<a href="#"><i class="fa fa-google-plus"></i></a>
+							</div>
+						</div>
+					</div>
+				</div><!--/.hm-footer-copyright-->
+			</div><!--/.container-->
+
+			<div id="scroll-Top">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+				</div>
+				
+			</div><!--/.scroll-Top-->
+			
+        </footer><!--/.footer-->
+		<!--footer end-->
+		
+		<script src="../assets/js/jquery.js"></script>
+        
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src="../assets/js/bootstrap.min.js"></script>
+		
+		<!-- bootsnav js -->
+		<script src="../assets/js/bootsnav.js"></script>
+
+        <!--feather.min.js-->
+        <script  src="../assets/js/feather.min.js"></script>
+
+        <!-- counter js -->
+		<script src="../assets/js/jquery.counterup.min.js"></script>
+		<script src="../assets/js/waypoints.min.js"></script>
+
+        <!--slick.min.js-->
+        <script src="../assets/js/slick.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+		     
+        <!--Custom JS-->
+        <script src="../assets/js/custom.js"></script>
+        
+    </body>
+	
+</html>

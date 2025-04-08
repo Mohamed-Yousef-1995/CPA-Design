@@ -1,0 +1,410 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+        
+        <!-- title of site -->
+        <title>CPA Portal Design Final</title>
+       
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+
+        <!--linear icon css-->
+		<link rel="stylesheet" href="../assets/css/linearicons.css">
+
+		<!--animate.css-->
+        <link rel="stylesheet" href="../assets/css/animate.css">
+
+		<!--flaticon.css-->
+        <link rel="stylesheet" href="../assets/css/flaticon.css">
+
+		<!--slick.css-->
+        <link rel="stylesheet" href="../assets/css/slick.css">
+		<link rel="stylesheet" href="../assets/css/slick-theme.css">
+		
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+		
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="../assets/css/bootsnav.css" >	
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="../assets/css/style.css">
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href="../assets/css/responsive.css">
+        
+		<style>
+			.wrapper{
+				margin-left: 240px;
+			}
+
+			.table-container {
+					width: 100%;
+					max-width: 900px;
+					margin: 50px auto;
+					background: white;
+					border-radius: 10px;
+					box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+					overflow: hidden;
+					padding: 20px;
+				}
+				table {
+					width: 100%;
+					border-collapse: separate;
+					border-spacing: 0 10px;
+				}
+				thead {
+					background-color: #ff545a;
+					color: white;
+				}
+				th, td {
+					padding: 15px;
+					text-align: left;
+				}
+				tbody tr {
+					background: #fff;
+					transition: all 0.3s;
+				}
+				tbody tr:hover {
+					background-color: #ff545a12;
+					transform: scale(1.01);
+					box-shadow: 0 2px 8px #ff545a30;
+				}
+				@media (max-width: 768px) {
+					.table-container {
+						overflow-x: auto;
+					}
+					th, td {
+						white-space: nowrap;
+					}
+				}
+				/* sidemenu bar */
+			
+			.sidebar {
+				width: 240px;
+				height: 100vh;
+				background-color: #04233b;
+				color: #ffffff;
+				position: fixed;
+				top: 0;
+				left: 0;
+				display: flex;
+				flex-direction: column;
+				padding-top: 20px;
+				box-shadow: 2px 0 10px rgb(0 0 0 / 5%);
+			}
+
+				.sidebar a {
+				display: flex;
+				align-items: center;
+				padding: 14px 20px;
+				text-decoration: none;
+				color: #ffffff;
+				transition: 0.3s;
+				font-size: 16px;
+				text-transform: uppercase;
+			}
+
+				.sidebar a i {
+				margin-right: 15px;
+			}
+
+				.sidebar .active a {
+				color: #0a97b0;
+			}
+			.sidebar a:hover {
+				color: #0a97b0;
+			}
+			.list-group{
+				padding-top:40px
+			}
+			.list-group-item{
+				background-color:#04233b ;
+				border: none !important;
+			}
+			.list-group-item:first-child{
+				border-radius: 0;
+			}
+
+			@media (max-width: 768px) {
+				.sidebar {
+					width: 200px;
+				}
+			}
+
+			@media (max-width: 480px) {
+				.sidebar {
+					position: absolute;
+					width: 180px;
+					z-index: 100;
+				}
+			}
+			.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{
+				background-color: #04233b;
+			}
+		</style>
+    </head>
+	
+	<body>
+		<!--header-top start -->
+		<header id="header-top" class="header-top">
+			<ul>
+				<li>
+					<div class="header-top-left">
+						<ul>
+							<li class="select-opt">
+								<select name="language" id="language">
+									<option value="default">EN</option>
+									<option value="Bangla">BN</option>
+									<option value="Arabic">AB</option>
+								</select>
+							</li>
+							<li class="select-opt">
+								<a href="#" style="color: white;"><i class="fa fa-wheelchair-alt" aria-hidden="true"></i></a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="head-responsive-right pull-right">
+					<div class="header-top-right">
+						<ul>
+							<li class="header-top-contact">
+								<span>80079009 </span><span> 80077997</span>
+							</li>
+							<li class="header-top-contact">
+								<a href="login.html">sign in</a>
+							</li>
+							<li class="header-top-contact">
+								<a href="#">register</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+					
+		</header><!--/.header-top-->
+		<!--header-top end -->
+
+
+		<nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+			<div class="position-sticky">
+			  <div class="list-group list-group-flush mx-3 mt-4">
+				<div class="navbar-header" style="float: none;">
+							
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+						<i class="fa fa-bars"></i>
+					</button>
+					
+					<a class="navbar-brand" href="../hompageD3.html"> <img src="../assets/logo/logo-wh.png" width="100px"/></a>
+					<!-- <a class="navbar-brand" href="index.html"> CPA<span>Oman</span></a> -->
+					
+
+				</div><!--/.navbar-header-->
+				<!-- Collapse 1 -->
+				<!-- <a class="list-group-item list-group-item-action py-2 ripple" aria-current="true"
+				data-mdb-collapse-init href="#collapseExample1" aria-expanded="true"
+				  aria-controls="collapseExample1">
+				  <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Expanded menu</span>
+				</a> -->
+				<!-- Collapsed content -->
+				<ul id="collapseExample1" class="collapse show list-group list-group-flush">
+				  <li class="list-group-item py-1">
+					<a href="../hompageD3.html" class="text-reset">home</a>
+				  </li>
+				  <li class="list-group-item py-1">
+					<a href="" class="text-reset">Our Services</a>
+				  </li>
+				  <li class="list-group-item py-1">
+					<a href="" class="text-reset">Complain & Track</a>
+				  </li>
+				  <li class="list-group-item py-1">
+					<a href="" class="text-reset">Alerts and Updates</a>
+				  </li>
+				  <li class="list-group-item py-1">
+					<a href="" class="text-reset">blog</a>
+				  </li>
+				  <li class="list-group-item py-1 ">
+					<a href="../assets/table.html" class="text-reset">List</a>
+				  </li>
+				  <li class="list-group-item py-1 active">
+					<a href="../assets/form.html" class="text-reset">Form</a>
+				  </li>
+				</ul>
+				<!-- Collapse 2 -->
+			  </div>
+			</div>
+		  </nav>
+		  <!-- Sidebar -->
+		   
+		  <section style="padding-top: 40px;">
+			<div class="container">
+				<h2><a href="../hompageD3.html"><span style="color: #84878b;">Home </span></a> > Form Example</h2>
+			</div>
+		 </section>
+		<!-- form start-->
+			<div class="container">
+				<img src="../assets/images/form.png" style="margin: 100px 0;border-radius: 20px;box-shadow: 5px 9px 25px rgb(240 242 245);"/>
+			</div>
+		<!--/.form end-->
+
+		<!--footer start-->
+		<footer id="footer"  class="footer">
+			<section class="info_section layout_padding2">
+				<div class="container">
+					<div class="row">
+					<div class="col-md-6 col-lg-3 info_col">
+						<div class="info_contact">
+						<h4>
+							Address
+						</h4>
+						<div class="contact_link_box">
+							<a href="">
+							<i class="fa fa-map-marker" aria-hidden="true"></i>
+							<span>
+								Oman
+							</span>
+							</a>
+							<a href="">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+							<span>
+								80077997 , 80079009
+							</span>
+							</a>
+							<a href="">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+							<span>
+								cc@pacp.gov.om
+							</span>
+							</a>
+						</div>
+						</div>
+						<!-- <div class="info_social">
+						<a href="">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</a>
+						<a href="">
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+						</a>
+						<a href="">
+							<i class="fa fa-linkedin" aria-hidden="true"></i>
+						</a>
+						<a href="">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
+						</a>
+						</div> -->
+					</div>
+					<div class="col-md-6 col-lg-3 info_col">
+						<div class="info_detail">
+						<h4>
+							Info
+						</h4>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-2 mx-auto info_col">
+						<div class="info_link_box">
+						<h4>
+							Links
+						</h4>
+						<div class="info_links">
+							<a class="active" href="#">
+							<img src="../assets/images/nav-bullet.png" alt="">
+							FAQ
+							</a>
+							<a class="" href="#">
+							<img src="../assets/images/nav-bullet.png" alt="">
+							Contact Us
+							</a>
+							<a class="" href="#">
+							<img src="../assets/images/nav-bullet.png" alt="">
+							How to sign in
+							</a>
+							<a class="" href="#">
+							<img src="../assets/images/nav-bullet.png" alt="">
+							CPA Employees
+							</a>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 info_col ">
+						<h4>
+						Subscribe
+						</h4>
+						<form action="#">
+						<input type="text" placeholder="Enter email">
+						<button type="submit">
+							Subscribe
+						</button>
+						</form>
+					</div>
+					</div>
+				</div>
+			</section>
+			<div class="container">
+				<div class="hm-footer-copyright">
+					<div class="row">
+						<div class="col-sm-5">
+							<p>
+								&copy;copyright by <a href="#">GCG Enterprice Solutions </a> 2025
+							</p><!--/p-->
+						</div>
+						<div class="col-sm-7">
+							<div class="footer-social">
+								<!-- <span><i class="fa fa-phone"> 80079009 OR 80077997</i></span> -->
+								<a href="#"><i class="fa fa-facebook"></i></a>	
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-linkedin"></i></a>
+								<a href="#"><i class="fa fa-google-plus"></i></a>
+							</div>
+						</div>
+					</div>
+				</div><!--/.hm-footer-copyright-->
+			</div><!--/.container-->
+
+			<div id="scroll-Top">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+				</div>
+				
+			</div><!--/.scroll-Top-->
+			
+        </footer><!--/.footer-->
+		<!--footer end-->
+
+		<script src="../assets/js/jquery.js"></script>
+        
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src="../assets/js/bootstrap.min.js"></script>
+		
+		<!-- bootsnav js -->
+		<script src="../assets/js/bootsnav.js"></script>
+
+        <!--feather.min.js-->
+        <script  src="../assets/js/feather.min.js"></script>
+
+        <!-- counter js -->
+		<script src="../assets/js/jquery.counterup.min.js"></script>
+		<script src="../assets/js/waypoints.min.js"></script>
+
+        <!--slick.min.js-->
+        <script src="../assets/js/slick.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+		     
+        <!--Custom JS-->
+        <script src="../assets/js/custom.js"></script>
+        
+    </body>
+	
+</html>
