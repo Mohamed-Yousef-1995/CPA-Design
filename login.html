@@ -36,7 +36,7 @@
         <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
 		
 		<!-- bootsnav -->
-		<!-- <link rel="stylesheet" href="../assets/css/bootsnav.css" >	 -->
+		<link rel="stylesheet" href="../assets/css/bootsnav.css" >	
         
         <!--style.css-->
         <link rel="stylesheet" href="../assets/css/style.css">
@@ -45,133 +45,151 @@
         <link rel="stylesheet" href="../assets/css/responsive.css">
 		<style>
 			.login-container {
-            background: #fff;
-            border-radius: 22px;
-            width: 50%;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-			opacity: 0.8;
-        }
-     	.register-container {
-            background: #fff;
-            border-radius: 22px;
-            width: 100%;
-            max-width: 400px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-           display:none;
-        }
- 
-        .login-header img {
-            display: block;
-            margin: 0 auto 15px;
-            width: 130px;
-        }
-
- 
-        .login-header p {
-			color: #555;
-			margin: 0px 0 20px 0;
-        }
- 
-        .form-group {
-            margin-bottom: 15px;
-        }
- 
-        .form-group label {
-			font-size: 14px;
-			color: #143044;
-			display: block;
-			font-weight: 500;
-			margin-bottom: 5px;
-		}
- 
-        .form-group input {
-            width: 100%;
-            padding: 10px;
-            font-size: 14px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-        }
- 
-        .form-actions {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 14px;
-			margin: 20px 0;
-        }
- 
-        .form-actions a {
-            color: #0a97b0;
-            text-decoration: none;
-        }
- 
-		.btn-submit {
-		width: 60%;
-		background-color: #5371f9;
-		color: #fff;
-		border: none;
-		border-radius: 8px;
-		cursor: pointer;
-		transition: background-color 0.3s;
-		display: block; /* Ensures the button takes the full width specified */
-		margin: 0 auto; /* Centers the button horizontally */
-			font-size: 14px;
-					padding: 8px;
-		}
- 
-        .btn-submit:hover {
-            background-color: #0a97b0;
-        }
- 
-        .login-footer {
-            margin-top: 20px;
-            text-align: center;
-            font-size: 14px;
-        }
- 
-        .login-footer a {
-            color: #0a97b0;
-            text-decoration: none;
-        }
- 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .login-container {
-                padding: 20px;
-            }
- 
-            .login-header img {
-                width: 60px;
-            }
- 
-            .login-header h2 {
-                font-size: 18px;
-            }
- 
- 
-        }
-		.welcome-hero{
-			height: 850px;
-		}
-		.welcome-hero-txt{
-			padding-top: 60px;
-		}
-		.welcome-hero-txt p{
-			font-size: 14px;
-		}
-		.welcome-hero-btn{
-			width: 100%;
-			margin-left: 0px;
-		}
-		.login-header{
-			text-align: left;
-		}
-		.login-header h2{
-			text-align: left;
-		}
-		.welcome-hero-txt p{color: #04233b;}
+				background: #fff;
+				border-radius: 22px;
+				width: 100%;
+				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+				padding: 50px;
+				opacity: 0.9;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				background: #fff;
+				border-radius: 3px;
+				box-shadow: 0 0px 10px rgba(71, 71, 71, .2);
+				-webkit-transition: .3s linear;
+				-moz-transition: .3s linear;
+				-ms-transition: .3s linear;
+				-o-transition: .3s linear;
+				transition: .3s linear;
+        	}
+			.register-container {
+				background: #fff;
+				border-radius: 22px;
+				width: 100%;
+				max-width: 400px;
+				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+				padding: 30px;
+				display:none;
+			}
+	
+			.login-header img {
+				display: block;
+				margin: 0 auto 15px;
+				width: 130px;
+			}
+	
+			.login-header p,.login-header a {
+				margin: 0px 0 20px 0;
+				font-size: 14px ;
+				font-weight: 600;
+				margin-bottom: 25px;
+				color: #04233b !important
+			}
+			.form-group {
+				margin-bottom: 15px;
+			}
+	
+			.form-group label {
+				font-size: 14px;
+				color: #04233b;
+				display: block;
+				font-weight: 500;
+				margin-bottom: 5px;
+			}
+	
+			.form-group input {
+				width: 100%;
+				padding: 10px;
+				font-size: 14px;
+				border: 1px solid #ddd;
+				border-radius: 8px;
+			}
+	
+			.form-actions {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				font-size: 14px;
+				margin: 20px 0;
+			}
+			.form-actions label {
+				display: inline-block;
+				max-width: 100%;
+				margin-left: 5px;
+				font-weight: 400;
+				margin-bottom: 0px;
+			}
+			.form-actions a {
+				color: #0a97b0;
+				text-decoration: none;
+			}
+			input[type=checkbox], input[type=radio]{
+				width: 15px;
+    			height: 15px;
+			}
+			.btn-submit {
+				width: 60%;
+				background-color: #5371f9;
+				color: #fff;
+				border: none;
+				border-radius: 8px;
+				cursor: pointer;
+				transition: background-color 0.3s;
+				display: block; /* Ensures the button takes the full width specified */
+				margin: 0 auto; /* Centers the button horizontally */
+				font-size: 14px;
+				padding: 8px;
+			}
+	
+			.btn-submit:hover {
+				background-color: #0a97b0;
+			}
+	
+			.login-footer {
+				margin-top: 20px;
+				text-align: center;
+				font-size: 14px;
+			}
+	
+			.login-footer a {
+				color: #0a97b0;
+				text-decoration: none;
+				font-size: 16px;
+			}
+		
+	
+			/* Responsive Design */
+			@media (max-width: 768px) {
+				.login-container {
+					padding: 20px;
+				}
+	
+				.login-header img {
+					width: 60px;
+				}
+	
+				.login-header h2 {
+					font-size: 18px;
+				}
+			}
+			.welcome-hero{
+				height: 600px;
+			}
+			.welcome-hero-txt{
+				padding-top: 60px;
+			}
+			.welcome-hero-txt p{
+				color: #04233b;
+				font-size: 16px;
+			}
+			.welcome-hero-txt .login-header a{
+				color: white !important;
+			}
+			.welcome-hero-btn{
+				width: 100%;
+				margin-left: 0px;
+			}
 		</style>
     </head>
 	
@@ -280,42 +298,60 @@
 		<section id="home" class="welcome-hero">
 			<div class="container">
 				<div class="welcome-hero-txt">
-					<img src="../assets/logo/logo-wh.png" width="200px" style="margin-left: -30px;"/>
-					<div class="login-header">
-						<h2>Login</h2>
-						<p style="color:white">Please enter your email and password to continue</p>
-						</div>
-					<!-- Login start -->
-		<div class="login-container">
-			
-			<form>
-			<div class="form-group">
-			<label  for="fake-username">User ID / Civil No#</label>
-			<input type="text" id="fake-username" name="email" placeholder="Enter your Civil No">
-			</div>
-			<div class="form-group">
-			<label for="fake-password">Password</label>
-			<input type="password" id="fake-password" name="fake-password" placeholder="Enter your password">
-			</div>
-			<div class="form-actions">
-			<div>
-			<input type="checkbox" id="remember">
-			<label for="remember">Remember Password</label>
-			</div>
-			</div>
-			<button type="button" id="fake-login"class="welcome-hero-btn">Sign In</button>
-			<div class="login-footer">
-			<p>Don’t have an account? <a href="/jw/web/userview/Omancpa/complaintModule/_/registerResidentCustomer?embed=true"  id='show-register'>Create Account</a></p>
-			<!-- <p>#i18n.Do you want to File a Complaint?# <a href="#appVariable.baseURL#jw/web/userview/Omancpa/complaintModule/_/complain_register"  id=''>#i18n.Click Here#</a></p> -->
-			<p><a href="#">Support</a> | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
-			</div>
-			</form>
-		</div>
-			
-		<!-- login end -->
-				</div>
-			</div>
+					<div class="row">
+						<div class="col-lg-6 col-md-6">
+							<img src="../assets/logo/logo-wh.png" width="200px" style="margin-left: -30px;"/>
+							<div class="login-header">
+								<h2>CPA Login</h2>
+								<p style="color: white !important;font-size: 24px;">
+									One stop solution for Consumerism in Oman
 
+								</p>
+								<p style="color: white !important; font-weight: 400;">
+									<b>Note:</b> Login as Supplier, Market Owner or Consumer to access the pool of CPA services by entering email / civil ID and password.
+								</p>
+								<p style="color: white !important; font-weight: 400;">
+									<b>Note:</b> CPA Employees shall, enter their user ID to access.
+								</p>
+								<p  style="color: white !important; font-weight: 400;">
+									<a href="#">Support</a> | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
+
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6">
+							<!-- Login start -->
+							<div class="login-container">
+								<div class="login-header">
+									<p>Dear User, enter your valid credentials to continue</p>
+								</div>
+								<form>
+									<div class="form-group">
+										<label  for="fake-username">User ID / Civil No#</label>
+										<input type="text" id="fake-username" name="email" placeholder="Enter your Civil No">
+									</div>
+									<div class="form-group">
+										<label for="fake-password">Password</label>
+										<input type="password" id="fake-password" name="fake-password" placeholder="Enter your password">
+									</div>
+									<div class="form-actions">
+										<div style="display: flex; align-items: center;">
+											<input type="checkbox" id="remember">
+											<label for="remember">Remember Password</label>
+										</div>
+									</div>
+									<button type="button" id="fake-login"class="welcome-hero-btn">Sign In</button>
+									<div class="login-footer">
+										<p>Don’t have an account? <a href="/jw/web/userview/Omancpa/complaintModule/_/registerResidentCustomer?embed=true"  id='show-register'>Register Now</a></p>
+										<!-- <p>#i18n.Do you want to File a Complaint?# <a href="#appVariable.baseURL#jw/web/userview/Omancpa/complaintModule/_/complain_register"  id=''>#i18n.Click Here#</a></p> -->
+										
+									</div>
+								</form>
+							</div><!-- login end -->
+						</div>
+					</div><!-- row end -->
+				</div><!-- welcom-hero-txt end -->
+			</div><!-- container end -->
 		</section><!--/.welcome-hero-->
 		<!--welcome-hero end -->
 

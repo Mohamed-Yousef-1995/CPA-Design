@@ -218,7 +218,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #0a97b0;}
     position: relative;
     background:url(../images/welcome-hero/banner-2.jpeg)no-repeat;
     background-position: 0px 0px;
-    background-size: 170%;
+    background-size: cover;
     text-align: left;
     height:600px;
     z-index: 1;
@@ -395,11 +395,30 @@ nav.navbar.bootsnav .navbar-toggle i{color: #0a97b0;}
     height: 35px;
     font-size: 12px;
     background: transparent;
+    /* color: #767f86;
+    border: 1px solid #d3d6d9; */
+    color: #0a97b0;
+    border: 1px solid #0a97b0;
+    border-radius: 3px;
+}
+
+.single-list-topics-content .welcome-hero-btn.how-work-btn {
+    margin-top: 20px !important;
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    font-size: 12px;
+    background: transparent;
     color: #767f86;
     border: 1px solid #d3d6d9;
     border-radius: 3px;
 }
-
+.single-list-topics-content:hover .welcome-hero-btn.how-work-btn{
+    display: inline-block;
+    width: 75%;
+    color: white;
+    border: 1px solid white;
+}
 .single-how-works:hover h2 a,.single-how-works:hover p{color: #fff;}
 .single-how-works:hover .single-how-works-icon{background: #fff;}
 .single-how-works:hover .welcome-hero-btn.how-work-btn{background: #fff;color: #0a97b0;}
