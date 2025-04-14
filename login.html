@@ -1,511 +1,469 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html>
 
-    <head>
-        <!-- meta data -->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
 
-        <!--font-family-->
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-        
-        <!-- title of site -->
-        <title>CPA Portal Design Final</title>
+  <title> CPA Portal Design 1</title>
 
-        <!-- For favicon png -->
-		<!-- <link rel="shortcut icon" type="image/icon" href="../assets/logo/favicon.png"/> -->
-       
-        <!--font-awesome.min.css-->
-        <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
 
-        <!--linear icon css-->
-		<link rel="stylesheet" href="../assets/css/linearicons.css">
+  <!-- bootsnav -->
+  <link rel="stylesheet" href="../assets/css/bootsnav.css" >	
 
-		<!--animate.css-->
-        <link rel="stylesheet" href="../assets/css/animate.css">
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
-		<!--flaticon.css-->
-        <link rel="stylesheet" href="../assets/css/flaticon.css">
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
-		<!--slick.css-->
-        <link rel="stylesheet" href="../assets/css/slick.css">
-		<link rel="stylesheet" href="../assets/css/slick-theme.css">
-		
-        <!--bootstrap.min.css-->
-        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-		
-		<!-- bootsnav -->
-		<link rel="stylesheet" href="../assets/css/bootsnav.css" >	
-        
-        <!--style.css-->
-        <link rel="stylesheet" href="../assets/css/style.css">
-        
-        <!--responsive.css-->
-        <link rel="stylesheet" href="../assets/css/responsive.css">
-		<style>
-			.login-container {
-				background: #fff;
-				border-radius: 22px;
-				width: 100%;
-				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-				padding: 50px;
-				opacity: 0.9;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				background: #fff;
-				border-radius: 3px;
-				box-shadow: 0 0px 10px rgba(71, 71, 71, .2);
-				-webkit-transition: .3s linear;
-				-moz-transition: .3s linear;
-				-ms-transition: .3s linear;
-				-o-transition: .3s linear;
-				transition: .3s linear;
-        	}
-			.register-container {
-				background: #fff;
-				border-radius: 22px;
-				width: 100%;
-				max-width: 400px;
-				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-				padding: 30px;
-				display:none;
-			}
-	
-			.login-header img {
-				display: block;
-				margin: 0 auto 15px;
-				width: 130px;
-			}
-	
-			.login-header p,.login-header a {
-				margin: 0px 0 20px 0;
-				font-size: 14px ;
-				font-weight: 600;
-				margin-bottom: 25px;
-				color: #04233b !important
-			}
-			.form-group {
-				margin-bottom: 15px;
-			}
-	
-			.form-group label {
-				font-size: 14px;
-				color: #04233b;
-				display: block;
-				font-weight: 500;
-				margin-bottom: 5px;
-			}
-	
-			.form-group input {
-				width: 100%;
-				padding: 10px;
-				font-size: 14px;
-				border: 1px solid #ddd;
-				border-radius: 8px;
-			}
-	
-			.form-actions {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				font-size: 14px;
-				margin: 20px 0;
-			}
-			.form-actions label {
-				display: inline-block;
-				max-width: 100%;
-				margin-left: 5px;
-				font-weight: 400;
-				margin-bottom: 0px;
-			}
-			.form-actions a {
-				color: #0a97b0;
-				text-decoration: none;
-			}
-			input[type=checkbox], input[type=radio]{
-				width: 15px;
-    			height: 15px;
-			}
-			.btn-submit {
-				width: 60%;
-				background-color: #5371f9;
-				color: #fff;
-				border: none;
-				border-radius: 8px;
-				cursor: pointer;
-				transition: background-color 0.3s;
-				display: block; /* Ensures the button takes the full width specified */
-				margin: 0 auto; /* Centers the button horizontally */
-				font-size: 14px;
-				padding: 8px;
-			}
-	
-			.btn-submit:hover {
-				background-color: #0a97b0;
-			}
-	
-			.login-footer {
-				margin-top: 20px;
-				text-align: center;
-				font-size: 14px;
-			}
-	
-			.login-footer a {
-				color: #0a97b0;
-				text-decoration: none;
-				font-size: 16px;
-			}
-		
-	
-			/* Responsive Design */
-			@media (max-width: 768px) {
-				.login-container {
-					padding: 20px;
-				}
-	
-				.login-header img {
-					width: 60px;
-				}
-	
-				.login-header h2 {
-					font-size: 18px;
-				}
-			}
-			.welcome-hero{
-				height: 600px;
-			}
-			.welcome-hero-txt{
-				padding-top: 60px;
-			}
-			.welcome-hero-txt p{
-				color: #04233b;
-				font-size: 16px;
-			}
-			.welcome-hero-txt .login-header a{
-				color: white !important;
-			}
-			.welcome-hero-btn{
-				width: 100%;
-				margin-left: 0px;
-			}
-		</style>
-    </head>
-	
-	<body>
+  <!-- font awesome style -->
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
 
-		<!--header-top start -->
-		<header id="header-top" class="header-top">
-			<ul>
-				<li>
-					<div class="header-top-left">
-						<ul>
-							<li class="select-opt">
-								<select name="language" id="language">
-									<option value="default">EN</option>
-									<option value="Bangla">BN</option>
-									<option value="Arabic">AB</option>
-								</select>
-							</li>
-							<!-- <li class="select-opt">
-								<select name="currency" id="currency">
-									<option value="usd">USD</option>
-									<option value="euro">Euro</option>
-									<option value="bdt">BDT</option>
-								</select>
-							</li> -->
-							<li class="select-opt">
-								<a href="#" style="color: white;"><i class="fa fa-wheelchair-alt" aria-hidden="true"></i></a>
-							</li>
-						</ul>
-					</div>
-				</li>
-				<!-- <li>
-					<div class="header-top-left">
-						<ul>
-							<div class="navbar-header">
-								<a class="navbar-brand" href="hompageD3.html"> CPA <span> Oman</span></a>
+  <!--animate.css-->
+  <link rel="stylesheet" href="../assets/css/animate.css">
 
-							</div>
-						</ul>
-					</div>
-				</li> -->
-				<li class="head-responsive-right pull-right" style="margin-top: 4px;">
-					<div class="header-top-right">
-						<ul>
-							<li class="header-top-contact">
-								<span>80079009 </span><span> 80077997</span>
-							</li>
-							<li class="header-top-contact">
-								<a href="#">sign in</a>
-							</li>
-							<li class="header-top-contact">
-								<a href="#">register</a>
-							</li>
-						</ul>
-					</div>
-				</li>
-			</ul>
-					
-		</header><!--/.header-top-->
-		<!--header-top end -->
+  <!--slick.css-->
+  <link rel="stylesheet" href="../assets/css/slick.css">
+  <link rel="stylesheet" href="../assets/css/slick-theme.css">
 
-		<!-- top-area Start -->
-		<section class="top-area">
+  <!-- Custom styles-->
+  <link href="assets/css/style.css" rel="stylesheet" />
+
+  <!-- responsive style -->
+  <link href="assets/css/responsive.css" rel="stylesheet" />
+  <style>
+    .login-container {
+      background: #fff;
+      border-radius: 22px;
+      width: 90%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 50px;
+      /* opacity: 0.9; */
+      margin: 0 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: #fff;
+      border-radius: 3px;
+      box-shadow: 0 0px 10px rgba(71, 71, 71, .2);
+      -webkit-transition: .3s linear;
+      -moz-transition: .3s linear;
+      -ms-transition: .3s linear;
+      -o-transition: .3s linear;
+      transition: .3s linear;
+
+    }
+    .register-container {
+      background: #fff;
+      border-radius: 22px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      display:none;
+    }
+	
+    .login-header img {
+      display: block;
+      margin: 0 auto 15px;
+      width: 130px;
+    }
+
+    .login-header p,.login-header a {
+      margin: 0px 0 20px 0;
+      font-size: 14px ;
+      font-weight: 600;
+      margin-bottom: 25px;
+      color: #04233b !important
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      font-size: 14px;
+      color: #04233b;
+      display: block;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    .form-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      margin: 20px 0;
+    }
+    .form-actions label {
+      display: inline-block;
+      max-width: 100%;
+      margin-left: 5px;
+      font-weight: 400;
+      margin-bottom: 0px;
+    }
+    .form-actions a {
+      color: #0a97b0;
+      text-decoration: none;
+    }
+    input[type=checkbox], input[type=radio]{
+      width: 15px;
+        height: 15px;
+    }
+    .btn-submit {
+      display: inline-block;
+      padding: 10px 45px;
+      background-color: #00bbf0;
+      color: #ffffff;
+      border-radius: 0;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      border: none;
+    }
+
+    .btn-submit:hover {
+      background-color: #02b1e2;
+    }
+
+    .login-footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .login-footer a {
+      color: #02b1e2;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="assets/images/hero-bg-2.jpeg" alt="">
+      </div>
+    </div>
+    <!-- header section -->
+    <section class="top-area">
 			<div class="header-area">
 				<!-- Start Navigation -->
-			    <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
-					
-			        <div class="">
-						
-			            <!-- Start Header Navigation -->
-			            <div class="navbar-header">
-							
-			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-			                    <i class="fa fa-bars"></i>
-			                </button>
-							
-			                <a class="" href="../hompageD3.html"> <img src="../assets/logo/logo-org.png" width="100px"/></a>
-							
+        <header class="header_section">
+          <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg custom_nav-container navbar-default bootsnav  navbar-sticky navbar-scrollspy" data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+              <a class="navbar-brand" href="homepageD1.html">
+                <span>
+                  <img src="assets/images/logo-wh.png" width="180px">
+                </span>
+              </a>
 
-			            </div><!--/.navbar-header-->
-			            <!-- End Header Navigation -->
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class=""> </span>
+              </button>
 
-			            <!-- Collect the nav links, forms, and other content for toggling -->
-			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
-			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-			                    <li class=""><a href="/hompageD3.html">home</a></li>
-			                    <li class=""><a href="/hompageD3.html">Our Services</a></li>
-			                    <li class=""><a href="#explore">Complain & Track</a></li>
-			                    <li class=""><a href="#reviews">Alerts and Updates</a></li>
-			                    <li class=""><a href="#blog">blog</a></li>
-								<li class=""><a href="../assets/table.html">list</a></li>
-								<li class=""><a href="../assets/form.html">form</a></li>
-			                    <!-- <li class="scroll"><a href="#contact">contact</a></li> -->
-			                </ul><!--/.nav -->
-			            </div><!-- /.navbar-collapse -->
-			        </div><!--/.container-->
-			    </nav><!--/nav-->
-			    <!-- End Navigation -->
-			</div><!--/.header-area-->
-		    <div class="clearfix"></div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav" data-in="fadeInDown" data-out="fadeOutUp">
+                  <li class="nav-item">
+                    <a class="nav-link" href="homepageD1.html"><i class="fa fa-chevron-left" aria-hidden="true" style="margin-right: 10px;"></i>back to home</a>
+                  </li>
+                </ul>
+    
+                <ul class="navbar-nav" data-in="fadeInDown" data-out="fadeOutUp">
+                  <li class="nav-item border-right "  style="margin-right: 8px;">
+                    <a class="nav-link" href="#"> AR</a>
+                  </li>
+                  <li class="nav-item " style="margin-right: 8px;">
+                    <a class="nav-link" href="#"> <i class="fa fa-universal-access" aria-hidden="true"></i></a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </header>
+      </div>
+    </section>
+    <!-- end header section -->
 
-		</section><!-- /.top-area-->
-		<!-- top-area End -->
+    <!-- slider section -->
+    <section id="home" class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="container ">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="detail-box">
+                          <h1>
+                            Welcome to <br>
+                            CPA Portal
+                          </h1>
+                          <p>
+                            The CPA e-portal represents a main gateway to connect the citizen with the government and provide the services offered to day-to-day product/services chain.
+                            
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <div class="container ">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="detail-box">
+                          <h1>
+                            The Vision of <br>
+                            CPA Oman
+                          </h1>
+                          <p>
+                            ​Develop consumer confidence on the authority role for protecting their rights and should be considered as a source of knowledge for the consumer awareness.​
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="container ">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="detail-box">
+                          <h1>
+                            Mission of <br>
+                            CPA Oman
+                          </h1>
+                          <p>
+                            The Authority plays a significant role in developing the national economy. To this end, the Authority shall take appropriate measures to stabilize markets.
+                  
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="position-relative">
+                <!-- Login start -->
+                <div class="login-container">
+                  <div class="login-header">
+                    <p>Dear User, enter your valid credentials to continue</p>
+                  </div>
+                  <form>
+                    <div class="form-group">
+                      <label  for="fake-username">User ID / Civil No#</label>
+                      <input type="text" id="fake-username" name="email" placeholder="Enter your Civil No">
+                    </div>
+                    <div class="form-group">
+                      <label for="fake-password">Password</label>
+                      <input type="password" id="fake-password" name="fake-password" placeholder="Enter your password">
+                    </div>
+                    <div class="form-actions">
+                      <div style="display: flex; align-items: center;">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember Password</label>
+                      </div>
+                    </div>
+                    <button type="button" id="fake-login"class="btn-submit">Sign In</button>
+                    <div class="login-footer">
+                      <p>Don’t have an account? <a href="/jw/web/userview/Omancpa/complaintModule/_/registerResidentCustomer?embed=true"  id='show-register'>Register Now</a></p>
+                      <!-- <p>#i18n.Do you want to File a Complaint?# <a href="#appVariable.baseURL#jw/web/userview/Omancpa/complaintModule/_/complain_register"  id=''>#i18n.Click Here#</a></p> -->
+                      
+                    </div>
+                  </form>
+                </div><!-- login end -->
+              </div>
+            </div>
 
-		<!--welcome-hero start -->
-		<section id="home" class="welcome-hero">
-			<div class="container">
-				<div class="welcome-hero-txt">
-					<div class="row">
-						<div class="col-lg-6 col-md-6">
-							<img src="../assets/logo/logo-wh.png" width="200px" style="margin-left: -30px;"/>
-							<div class="login-header">
-								<h2>CPA Login</h2>
-								<p style="color: white !important;font-size: 24px;">
-									One stop solution for Consumerism in Oman
-
-								</p>
-								<p style="color: white !important; font-weight: 400;">
-									<b>Note:</b> Login as Supplier, Market Owner or Consumer to access the pool of CPA services by entering email / civil ID and password.
-								</p>
-								<p style="color: white !important; font-weight: 400;">
-									<b>Note:</b> CPA Employees shall, enter their user ID to access.
-								</p>
-								<p  style="color: white !important; font-weight: 400;">
-									<a href="#">Support</a> | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
-
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-6 col-md-6">
-							<!-- Login start -->
-							<div class="login-container">
-								<div class="login-header">
-									<p>Dear User, enter your valid credentials to continue</p>
-								</div>
-								<form>
-									<div class="form-group">
-										<label  for="fake-username">User ID / Civil No#</label>
-										<input type="text" id="fake-username" name="email" placeholder="Enter your Civil No">
-									</div>
-									<div class="form-group">
-										<label for="fake-password">Password</label>
-										<input type="password" id="fake-password" name="fake-password" placeholder="Enter your password">
-									</div>
-									<div class="form-actions">
-										<div style="display: flex; align-items: center;">
-											<input type="checkbox" id="remember">
-											<label for="remember">Remember Password</label>
-										</div>
-									</div>
-									<button type="button" id="fake-login"class="welcome-hero-btn">Sign In</button>
-									<div class="login-footer">
-										<p>Don’t have an account? <a href="/jw/web/userview/Omancpa/complaintModule/_/registerResidentCustomer?embed=true"  id='show-register'>Register Now</a></p>
-										<!-- <p>#i18n.Do you want to File a Complaint?# <a href="#appVariable.baseURL#jw/web/userview/Omancpa/complaintModule/_/complain_register"  id=''>#i18n.Click Here#</a></p> -->
-										
-									</div>
-								</form>
-							</div><!-- login end -->
-						</div>
-					</div><!-- row end -->
-				</div><!-- welcom-hero-txt end -->
-			</div><!-- container end -->
-		</section><!--/.welcome-hero-->
-		<!--welcome-hero end -->
-
-		
-		<!--footer start-->
-		<footer id="footer"  class="footer">
-			<section class="info_section layout_padding2">
-				<div class="container">
-					<div class="row">
-					<div class="col-md-6 col-lg-3 info_col">
-						<div class="info_contact">
-						<h4>
-							Address
-						</h4>
-						<div class="contact_link_box">
-							<a href="">
-							<i class="fa fa-map-marker" aria-hidden="true"></i>
-							<span>
-								Oman
-							</span>
-							</a>
-							<a href="">
-							<i class="fa fa-phone" aria-hidden="true"></i>
-							<span>
-								80077997 , 80079009
-							</span>
-							</a>
-							<a href="">
-							<i class="fa fa-envelope" aria-hidden="true"></i>
-							<span>
-								cc@pacp.gov.om
-							</span>
-							</a>
-						</div>
-						</div>
-						<!-- <div class="info_social">
-						<a href="">
-							<i class="fa fa-facebook" aria-hidden="true"></i>
-						</a>
-						<a href="">
-							<i class="fa fa-twitter" aria-hidden="true"></i>
-						</a>
-						<a href="">
-							<i class="fa fa-linkedin" aria-hidden="true"></i>
-						</a>
-						<a href="">
-							<i class="fa fa-instagram" aria-hidden="true"></i>
-						</a>
-						</div> -->
-					</div>
-					<div class="col-md-6 col-lg-3 info_col">
-						<div class="info_detail">
-						<h4>
-							Info
-						</h4>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-2 mx-auto info_col">
-						<div class="info_link_box">
-						<h4>
-							Links
-						</h4>
-						<div class="info_links">
-							<a class="active" href="#">
-							<img src="../assets/images/nav-bullet.png" alt="">
-							FAQ
-							</a>
-							<a class="" href="#">
-							<img src="../assets/images/nav-bullet.png" alt="">
-							Contact Us
-							</a>
-							<a class="" href="#">
-							<img src="../assets/images/nav-bullet.png" alt="">
-							How to sign in
-							</a>
-							<a class="" href="#">
-							<img src="../assets/images/nav-bullet.png" alt="">
-							CPA Employees
-							</a>
-						</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 info_col ">
-						<h4>
-						Subscribe
-						</h4>
-						<form action="#">
-						<input type="text" placeholder="Enter email">
-						<button type="submit">
-							Subscribe
-						</button>
-						</form>
-					</div>
-					</div>
-				</div>
-			</section>
-			<div class="container">
-				<div class="hm-footer-copyright">
-					<div class="row">
-						<div class="col-sm-5">
-							<p>
-								&copy;copyright by <a href="#">GCG Enterprice Solutions </a> 2025
-							</p><!--/p-->
-						</div>
-						<div class="col-sm-7">
-							<div class="footer-social">
-								<!-- <span><i class="fa fa-phone"> 80079009 OR 80077997</i></span> -->
-								<a href="#"><i class="fa fa-facebook"></i></a>	
-								<a href="#"><i class="fa fa-twitter"></i></a>
-								<a href="#"><i class="fa fa-linkedin"></i></a>
-								<a href="#"><i class="fa fa-google-plus"></i></a>
-							</div>
-						</div>
-					</div>
-				</div><!--/.hm-footer-copyright-->
-			</div><!--/.container-->
-
-			<div id="scroll-Top">
-				<div class="return-to-top">
-					<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
-				</div>
-				
-			</div><!--/.scroll-Top-->
-			
-        </footer><!--/.footer-->
-		<!--footer end-->
-		
-		<script src="../assets/js/jquery.js"></script>
+          </div>
+        </div>
         
-        <!--modernizr.min.js-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-		
-		<!--bootstrap.min.js-->
-        <script src="../assets/js/bootstrap.min.js"></script>
-		
-		<!-- bootsnav js -->
-		<script src="../assets/js/bootsnav.js"></script>
-
-        <!--feather.min.js-->
-        <script  src="../assets/js/feather.min.js"></script>
-
-        <!-- counter js -->
-		<script src="../assets/js/jquery.counterup.min.js"></script>
-		<script src="../assets/js/waypoints.min.js"></script>
-
-        <!--slick.min.js-->
-        <script src="../assets/js/slick.min.js"></script>
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-		     
-        <!--Custom JS-->
-        <script src="../assets/js/custom.js"></script>
         
-    </body>
-	
+        <ol class="carousel-indicators">
+          <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+          <li data-target="#customCarousel1" data-slide-to="1"></li>
+          <li data-target="#customCarousel1" data-slide-to="2"></li>
+        </ol>
+      </div>
+
+    </section>
+    <!-- end slider section -->
+    
+
+  <!--footer start-->
+  <footer id="footer"  class="footer">
+    <section class="info_section layout_padding2">
+      <div class="container">
+        <div class="row">
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_contact">
+          <h5>
+            Address
+          </h5>
+          <div class="contact_link_box">
+            <a href="">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <span>
+              Oman
+            </span>
+            </a>
+            <a href="">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <span>
+              80077997 , 80079009
+            </span>
+            </a>
+            <a href="">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <span>
+              cc@pacp.gov.om
+            </span>
+            </a>
+          </div>
+          </div>
+          <!-- <div class="info_social">
+          <a href="">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+          </div> -->
+        </div>
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_detail">
+          <h5>
+            Info
+          </h5>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2 mx-auto info_col">
+          <div class="info_link_box">
+          <h5>
+            Links
+          </h5>
+          <div class="info_links">
+            <a class="active" href="#">
+            <img src="assets/images/nav-bullet.png" alt="">
+            FAQ
+            </a>
+            <a class="" href="#">
+            <img src="assets/images/nav-bullet.png" alt="">
+            Contact Us
+            </a>
+            <a class="" href="#">
+            <img src="assets/images/nav-bullet.png" alt="">
+            How to sign in
+            </a>
+            <a class="" href="#">
+            <img src="assets/images/nav-bullet.png" alt="">
+            CPA Employees
+            </a>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info_col ">
+          <h5>
+          Subscribe
+          </h5>
+          <form action="#">
+          <input type="text" placeholder="Enter email">
+          <button type="submit">
+            Subscribe
+          </button>
+          </form>
+        </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="hm-footer-copyright">
+        <div class="row">
+          <div class="col-sm-5">
+            <p>
+              &copy; copyright by <a href="#">CPA Oman </a> 2025
+            </p><!--/p-->
+          </div>
+          <div class="col-sm-7">
+            <div class="footer-social">
+              <!-- <span><i class="fa fa-phone"> 80079009 OR 80077997</i></span> -->
+              <a href="#"><i class="fa fa-facebook"></i></a>	
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+              <a href="#"><i class="fa fa-google-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div><!--/.hm-footer-copyright-->
+    </div><!--/.container-->
+
+    <div id="scroll-Top">
+      <div class="return-to-top">
+        <i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+      </div>
+      
+    </div><!--/.scroll-Top-->
+    
+  </footer><!--/.footer-->
+  <!--footer end-->
+
+  <!-- jQery -->
+  <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!--modernizr.min.js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+  <!-- bootsnav js -->
+  <script src="../assets/js/bootsnav.js"></script>
+  <!--feather.min.js-->
+  <script  src="../assets/js/feather.min.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!--slick.min.js-->
+  <script src="../assets/js/slick.min.js"></script>
+  <!-- jquery.easing.min.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <!-- custom js -->
+  <script type="text/javascript" src="assets/js/custom.js"></script>
+
+</body>
+
 </html>
