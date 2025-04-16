@@ -30,6 +30,18 @@ body {
   padding-bottom: 90px;
 }
 
+.odd{
+  background-color: #ececec;
+}
+.odd .box{
+  background-color: #fff !important;
+}
+.even{
+  background-color: #fff;
+}
+.even .box{
+  background-color: #f8f8f9;
+}
 .heading_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -470,7 +482,7 @@ nav.navbar.bootsnav{
           align-items: center;
   text-align: center;
   margin-top: 45px;
-  background-color: #f8f8f9;
+  background-color: #ececec;
   padding: 20px;
   border-radius: 5px;
 }
@@ -504,7 +516,7 @@ nav.navbar.bootsnav{
 }
 
 .service_section .box .detail-box a {
-  
+  color: #00bbf0;
   font-weight: 600;
 }
 
@@ -526,7 +538,7 @@ nav.navbar.bootsnav{
   display: inline-block;
   padding: 10px 45px;
   background-color: #00bbf0;
-  color: #ffffff;
+  color: #ffffff !important;
   border-radius: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -535,6 +547,12 @@ nav.navbar.bootsnav{
 
 .service_section .btn-box a:hover {
   background-color: #007fa4;
+  
+}
+.box:hover{
+  background-color: #ffe89c82 !important;
+  /* background-color: #19ccff42 !important; */
+  box-shadow: 1px 4px 10px #d7d7d7;
 }
 
 .complain .btn-box{
@@ -1132,4 +1150,49 @@ border:1px solid #0a97b0;
   0%   {bottom:0px;}
   100%  {bottom:7px;}
 }
+
+/*-------------------------------------       
+        9.  Counter
+--------------------------------------*/
+.statistics{
+  position:relative;
+  display: flex;
+  align-items: center;
+  background:url(/assets/images/counter-banner.jpg)no-repeat fixed;
+  background-position:center;
+  background-size:cover;
+  padding:127px 0 120px;
+}
+.statistics:before{
+  position:absolute;
+  content:'';
+  background: rgba(75,75,75,.60);
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
+}
+/* single-ststistics-box */
+.single-ststistics-box {
+  text-align: center;
+  margin-bottom:30px;
+
+}
+/* single-ststistics-box */
+.statistics-content{
+  display: flex;
+  justify-content: center;
+  color:#fff;
+  font-size:60px;
+}
+.statistics-content span {
+  margin-left: 5px;
+}
+.single-ststistics-box h3{
+  color:#fff;
+  font-size:24px;
+  text-transform:capitalize;
+  font-weight: 500;
+}
+
 /*# sourceMappingURL=style.css.map */

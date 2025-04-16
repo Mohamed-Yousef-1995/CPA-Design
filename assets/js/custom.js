@@ -42,4 +42,13 @@ $(document).ready(function(){
             }
         }
     });
+
+    // counter
+    $(window).on('load', function(){	
+        $('.counter').counterUp({
+            delay: 10,
+            time: 3000
+        });	
+    });
+    
 });
